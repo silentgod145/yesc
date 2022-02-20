@@ -1,0 +1,39 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
+--local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/silentgod145/whitelist/main/whitelist",true))()
+
+ local Window = Library:Create("Wlock","anything")
+
+local Tab1 = Window:Tab("Lock",true)
+
+Tab1:Button("🛀Silent Aim and Aim Lock hold e to aim lock doe🛀",function(bool)
+ loadstring(game:HttpGet("https://pastebin.com/raw/M3nt5Dad" ))() 
+end)
+
+Tab1:Button("💈 FLY (X)",function(bool)
+    loadstring(game:HttpGet("https://pastebin.com/raw/sUA9m6M6"))()
+end)
+
+local Tab2 = Window:Tab("clientside",true)
+
+Tab2:Button("Headless Client Sided",function(bool)
+    getgenv().game.Players.LocalPlayer.Character.Head.Transparency = 1
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+    getgenv().game.Players.LocalPlayer.Character.Head.face:Destroy()
+end)
+
+
+Tab2:Button("Korblox Client Sided",function(bool)
+	local ply = game.Players.LocalPlayer
+	local chr = ply.Character
+	chr.RightLowerLeg.MeshId = "902942093"
+	chr.RightLowerLeg.Transparency = "1"
+	chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+	chr.RightFoot.MeshId = "902942089"
+	chr.RightFoot.Transparency = "1"
+end)
+Tab3:Label("Keybind")
+
+Tab3:Keybind("Toggle",Enum.KeyCode.V,function()
+    Library:Toggle()
+end)
