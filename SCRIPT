@@ -5,8 +5,8 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mappl
 
 local Tab1 = Window:Tab("LOCK",true)
 
-Tab1:Button(q to aim lock",function(bool)
- loadstring(game:HttpGet("https://pastebin.com/raw/STVHv8es" ))() 
+Tab1:Button("Lock(q)",function(bool)
+    loadstring(game:HttpGet("https://pastebin.com/raw/STVHv8es"))()
 end)
 
 Tab1:Button("FLY (x)",function(bool)
@@ -31,10 +31,4 @@ Tab2:Button("Korblox Client Sided",function(bool)
 	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 	chr.RightFoot.MeshId = "902942089"
 	chr.RightFoot.Transparency = "1"
-end)
-local Tab3 = Window:Tab("Close",true)
-Tab3:Label("discord:clutch#2681")
-
-Tab3:Keybind("Toggle",Enum.KeyCode.V,function()
-    Library:Toggle()
 end)
