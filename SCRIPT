@@ -1,7 +1,7 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Mapple7777/UI-Librarys/main/UI-1/UI.lua"))()
 --local Whitelist = loadstring(game:HttpGet("https://raw.githubusercontent.com/silentgod145/whitelist/main/whitelist",true))()
 
- local Window = Library:Create("X.Lock","add")
+ local Window = Library:Create("X.Lock","Discord:clutch#2681")
 
 local Tab1 = Window:Tab("LOCK",true)
 
@@ -31,4 +31,11 @@ Tab2:Button("Korblox Client Sided",function(bool)
 	chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
 	chr.RightFoot.MeshId = "902942089"
 	chr.RightFoot.Transparency = "1"
+end)
+local Tab7 = Window:Tab("Close",false)
+
+Tab7:Label("lol")
+
+Tab7:Keybind("Toggle",Enum.KeyCode.V,function()
+    Library:Toggle()
 end)
